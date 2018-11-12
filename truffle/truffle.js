@@ -1,7 +1,8 @@
+require('dotenv').config()
 var HDWalletProvider = require("truffle-hdwallet-provider");
 
 // Only for testing...not actual production values
-var mnemonic = "west delay donor consider giant dwarf model trash card blur plunge amazing";
+var mnemonic = process.env.local.MNEMONIC;
 
 module.exports = {
   networks: {
