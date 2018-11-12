@@ -1,0 +1,148 @@
+[
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "allMessage",
+      "outputs": [
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "content",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_age",
+          "type": "uint256"
+        }
+      ],
+      "name": "setProfile",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getUser",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "age",
+              "type": "uint256"
+            }
+          ],
+          "name": "user",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_title",
+          "type": "string"
+        },
+        {
+          "name": "_content",
+          "type": "string"
+        }
+      ],
+      "name": "postMessage",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getMessage",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "content",
+              "type": "string"
+            }
+          ],
+          "name": "message_",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getAllMessage",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "content",
+              "type": "string"
+            }
+          ],
+          "name": "allMessage_",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
